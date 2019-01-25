@@ -1,63 +1,144 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <title>XBRL.SM</title>
 
 	<link type="image/png" href="images/xbrl_circle32.png" rel="shortcut icon" />
 	<link type="image/png" href="images/xbrl_circle32.png" rel="icon" />
-	
 	<link type="text/css" href="css/main.css" rel="stylesheet">
+
+	<link type="text/css" href="js/slick/slick.css" rel="stylesheet">
+	<link type="text/css" href="js/slick/slick-theme.css" rel="stylesheet">
+
+	
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>	
+  <script type="text/javascript" src="js/jss.js" ></script>	
+  <script type="text/javascript" src="js/slick/slick.min.js" ></script>	
+	
+	
+	<script type="text/javascript">
+$(function() {
+	$(document).ready(function(){
+	  $('#middlebar .slickpanel').slick({
+	  	dots: true
+	  });
+	});
+	console.info(window.screen);
+	console.info($(window).width(), $(window).height());
+});	
+	</script>
 </head>
 <body>
 <div id="topbar">
-  <img src="images/stemmaRSM_medw.png" style="position: absolute; left: 16px; top: 6px;"/>
-  <img src="images/xbrl_sm.png" style="position: absolute; right: 16px; top: 6px; height: 72px;" />
-  <div style="padding-top: 2px; font-size: 32px; font-weight: 200;">
+  <img src="images/stemmaRSM_med.png" class="stemmarsm" />
+  <div class="title">
      XBRL - Repubblica di San Marino
   </div>
-  <div style="padding-top: -6px; font-size: 18px; font-weight: normal;">
+  <div class="subtitle">
      Il sito ufficiale della Repubblica di San Marino per l'XBRL
   </div>
+  <img src="images/xbrl_sm.png" class="xbrllogo"  />
 </div>
-<div id="middlebar" style="font-size: 20px; font-weight: 200; padding: 20px;">
-  Un linguaggio standard per la rappresentazione dei rendiconti finanziari
+<div id="middlebar">
+  <div class="slickpanel">
+		  <div class="new">
+		    <div class="data">23/01/2019</div>
+		    <div class="title">Partita la sperimentazione della funzione di creazione XBRL</div>
+		    <div class="body">
+		      Da oggi un gruppo ristretto di professionisti proverà la funzione di creazione del bilancio XBRL.
+		      <br/>
+		      Tale funzione, presente nell'applicazione <b>OPEC</b> del portale <a href="www.pa.sm" targte="_blank">www.pa.sm</a>, permette di inserire tutte le voci del bilancio 
+		      secondo la tassonomia elaborata dal dipartimento economia in stretta collaborazione con l'ordine dei commercialisti.
+		      <br/>
+		      Entro la fine del mese di gennaio sarà possibile per tutti inserire il bilancio con questa funzione.
+		    </div>
+		    <div class="continue">
+		      <a href="inputxbrl.html">maggiori dettagli...</a> 
+		    </div>
+		     
+		  </div>
+		  <div>
+		    <div class="data">25/01/2019</div>
+		    <div class="title">Decreto delegato 31 ottobre 2018 n.138</div>
+		    <div class="body">
+		      Il decreto delegato n.138 "Semplificazione per la presentazione del bilancio degli operatori economici" è stato ratificato
+		      nella seduta odierna del Consiglio Grande e Generale.
+		      <br/>
+		      Il decreto norma per la prima volta a San marino la presentazione dei bilanci delle società nel formato XBRL.		       		     
+		      <br/>
+		      Può essere scaricato in formato PDF da <a href="https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17104523.html" target="_blank">qui</a>.
+		    </div>
+		  
+		  </div>
+  </div>
 </div>
+
+  <div style="position: absolute; top: 320px; left: 120px; font-size: 150px; color: rgba(100, 100, 100, 0.3); -moz-transform:rotate(20deg); -webkit-transform:rotate(20deg); z-index: 0;">
+   	   SITO IN COSTRUZIONE
+  </div>
+
+<div class="boxstripe">
 
 <div class="box">
    <div class="icon"><img src="images/info.png" /></div>
-   <div class="text">
-   Che cos'� l'XBRL?
-   <br/>
-   L'XBRL bla bla bla kj eofe eo eo
+   <div class="title">
+   Che cos'è l'XBRL?
+   </div>
+   <div class="desc">
+   L’acronimo XBRL sta per eXtensible Business Reporting Language ed è un linguaggio cosiddetto di marcatura (mark-up language)  basato su XML utilizzato 
+   principalmente per la comunicazione e lo scambio elettronico di informazioni contabili e finanziarie. 
+   Tramite un insieme di metadati definiti in una tassonomia, XBRL permette di specificare tutte le voci necessarie alla creazione di uno specifico documento contabile.
+   In sostanza un documento XBRL è un file dove i dati vengono etichettati con una codifica che ne definisce il tipo di voce, selezionata tra quelle presenti nella tassonomia, 
+   e poi riporta la definizione o il valore del dato, come ad esempio il periodo di riferimento, il nominativo dell'azienda, la valuta di conto utilizzata, il valore contabile.  
+   </div>
+   <div class="more">
+      <a href="whatis.html">Continua...</a>
    </div>
 </div>
  
  <div class="box">
    <div class="icon"><img src="images/legal.png" /></div>
-   <div class="text">
+   <div class="title">
    Legislazione.
-   <br/>
-   L'XBRL bla bla bla kj eofe eo eo
+   </div>
+   <div class="desc">
+   Ah su po cercarla divorato semplice va assalito. Lancio aurora verita se medico ti un audace. 
+   Oro ebbi cane taci taci ami neve vano. Scavatori nel dal vedendolo soffocato sorrideva veramente voi. 
+   Dov cio non grano sue grana sogno. Pronunzia di riapparve al accendeva ti splendori inasprite. Lieve legge amo mille sai tutta monti fai. 
+   Animazione sgomentato io di affettuosa ed oh. Nei bianchi voi assunto udi debbano sue.  ...
+   </div>
+   <div class="more">
+      <a href="leggi.html">Continua...</a>
    </div>
 </div>
 
  <div class="box">
    <div class="icon"><img src="images/taxo.png" /></div>
-   <div class="text">
+   <div class="title">
    Tassonomia.
-   <br/>
-   L'XBRL bla bla bla kj eofe eo eo
+   </div>
+   <div class="desc">
+   Cane ebbi anch tuoi ami dio cio pura. Rifletti un ah visibile silenzio il. Potermi profumi ah ed vederla salvato lontane. Gli vedrei vedrai oro guardi sia. Rose se viva uomo quel ve essa. Ci alcuna stanca ma fiocca tu. Padronanza ricordarti ha ti animazione fa perdonarmi il ricuperata. Nel apparve pur confusa risorta ansiosi. 
+   </div>
+   <div class="more">
+      <a href="taxo.html">Continua...</a>
    </div>
  </div>
  
  <div class="box">
    <div class="icon"><img src="images/tools.png" /></div>
-   <div class="text">
+   <div class="title">
    Strumenti.
-   <br/>
-   L'XBRL bla bla bla kj eofe eo eo
    </div>
+   <div class="desc">
+   Sul pensoso chi non dal tremito piacque. Furono aquila vedrai mie andare intera chi cumulo ben. Battera cattivo rimasto al divieto ve rossore. Affaticato indicibili eguagliare fu troveresti ch indebolite vi. Uso ricuperata vergognoso troveresti era bentornato nel mia crepitando. Sta disconosci indefinite appartenga piacerebbe san ricuperato. ...
+   </div>
+   <div class="more">
+      <a href="tools.html">Continua...</a>
+   </div>
+</div>
+
 </div> 
 </body>
 </html>

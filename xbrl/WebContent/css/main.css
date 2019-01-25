@@ -5,25 +5,172 @@ p, table, div, body {
 	font-weight: normal;
 	font-size: 12px;
 }
+
+body {
+	background-color: #fafafa;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%235ac2f5' fill-opacity='0.92' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+	margin: 0;
+}
+
+/*   ================================================
+                          TOP BAR
+     ================================================  */                       
 #topbar {
 /* 	background: #8abde8; */
-    background: url("images/backtop.jpg");
+    background-image: url("images/backtop3.jpg");
+    background-repeat: no-repeat;
+    background-color: #F9FDFF;
 	height: 80px;
 	position: relative;
 	font-size: 26px;
 	text-align: center;
 }
+
+#topbar .xbrllogo {
+	position: absolute; 
+	right: 16px; 
+	top: 6px; 
+	height: 72px;
+}
+#topbar .title {
+	padding-top: 2px; 
+	font-size: 32px; 
+	font-weight: 200;
+}
+#topbar .subtitle {
+  padding-top: -6px; 
+  font-size: 18px; 
+  font-weight: normal;
+}
+#topbar .stemmarsm {
+   position: absolute; 
+   left: 12px; 
+   top: 6px;
+}
+
+/* -------- MEDIUM SCREEN --------- */
+.screen-m #topbar .title {
+	padding-top: 2px; 
+	font-size: 26px; 
+	font-weight: 200;
+}
+
+.screen-m #topbar .subtitle {
+	font-size: 14px; 
+}
+
+.screen-m #topbar .xbrllogo {
+	height: 50px;
+	right: 4px;
+	top: 16px;
+}
+
+
+/* -------- SMALL SCREEN --------- */
+.screen-s #topbar  {
+	height: 120px;
+}
+
+
+.screen-s #topbar .xbrllogo {
+	height: 50px;
+}
+.screen-s #topbar .stemmarsm {
+}
+
+.screen-s #topbar .title {
+	font-size: 20px; 
+	font-weight: 200;
+  position: absolute; 
+  left: 68px; 
+  top: 52px;
+}
+
+.screen-s #topbar .subtitle {
+	font-size: 11px; 
+	display: block;
+  position: absolute; 
+  left: 68px; 
+  top: 90px;
+}
+
+
+/*   ================================================
+                       MIDDLE BAR
+     ================================================  */                       
+
 #middlebar {
+	width: 50%;
+	max-width: 700px;
+	margin: 12px auto; 
+	background: #abc;
+	background: url("images/backnews.jpg");
+	z-index: 10;
+}	
+#middlebar .slickpanel {
 	text-align: center;
+	width: 85%;
+	margin: 0 auto; 
+	xborder: 1px solid #93d5f9;
 }	
 
+#middlebar .slickpanel div.new {
+	font-size: 28px;
+	height: 320px;
+	position: relative;
+	background: #B2E0F48a;
+}	
+
+#middlebar .slickpanel div.data {
+	font-size: 14px;
+	font-weight: normal;
+}	
+
+#middlebar .slickpanel div.title {
+	font-size: 32px;
+	font-weight: 200;
+}	
+
+#middlebar .slickpanel div.body {
+	font-size: 18px;
+	font-weight: normal;
+	text-align: left;
+	padding: 2px 6px;
+}	
+
+#middlebar .slickpanel div.continue {
+	text-align: right;
+	position: absolute;
+	right: 1px;
+	bottom: 2px;
+}	
+#middlebar .slickpanel div.continue a {
+	font-size: 14px;
+	font-weight: normal;
+	color: #000;
+	text-decoration: underline;	
+}
+
+/*   ================================================
+                         BOXES
+     ================================================  */                       
+.boxstripe {
+	margin-top: 40px;
+	text-align: center; 
+	vertical-align: top;	
+}
 .box {
-	float: left;
+	display: inline-block;
+	background: #fafafa;
 	width: 20%;
 	min-width: 200px;
-	border: 1px solid #bbb;
+	border: 1px solid #ddd;
+	border-radius: 2px;
 	padding: 4px;
 	margin: 3px 4px;
+	
+  -webkit-box-shadow: 0 0 6px 1px #C9C9C9;
+  box-shadow: 0 0 6px 1px #C9C9C9;	
 }
 .box .icon {
 	text-align: center;
@@ -31,11 +178,48 @@ p, table, div, body {
 .box .icon img {
 	width: 40px;
 }
-.box .text {
-	font-size: 18px;
-	font-weight: 200;
+.box .title {
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
 }
 
+.box .desc {
+	margin-top: 12px;
+	font-size: 18px;
+	font-weight: 200;
+	text-align: left;
+	height: 200px;
+	overflow: hidden;
+}
+
+.box .more {
+	text-align: right;
+}	
+
+.box .more a {
+	text-align: right;
+	font-size: 16px;
+	text-decoration: underline;
+	font-weight: 200;
+	color: #333;
+}	
+.box .more a:hover {
+	font-weight: bold;
+}
+
+.screen-m .box .title {
+	font-size: 16px;
+}
+
+.screen-m  .box .desc {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.screen-m  .box .more a {
+	font-size: 10px;
+}
 /*  -------------------------------------
                      FONTS
     ------------------------------------- */
