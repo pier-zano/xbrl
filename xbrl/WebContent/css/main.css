@@ -17,9 +17,9 @@ body {
      ================================================  */                       
 #topbar {
 /* 	background: #8abde8; */
-    background-image: url("images/backtop3.jpg");
-    background-repeat: no-repeat;
-    background-color: #F9FDFF;
+  background-image: url("images/backtop3.jpg");
+  background-repeat: no-repeat;
+  background-color: #F9FDFF;
 	height: 80px;
 	position: relative;
 	font-size: 26px;
@@ -151,6 +151,10 @@ body {
 	text-decoration: underline;	
 }
 
+#middlebar .slick-dots li button:before {
+    font-size: 12px;
+}
+
 /*   ================================================
                          BOXES
      ================================================  */                       
@@ -204,9 +208,6 @@ body {
 	font-weight: 200;
 	color: #333;
 }	
-.box .more a:hover {
-	font-weight: bold;
-}
 
 .screen-m .box .title {
 	font-size: 16px;
@@ -220,6 +221,38 @@ body {
 .screen-m  .box .more a {
 	font-size: 10px;
 }
+
+/*   ================================================
+                         PAGES
+     ================================================  */                       
+.argument {
+	margin: 20px auto;
+	padding: 6px 8px;
+	background: #ffffffba;
+	font-size: 24px;
+	width: 80%;		
+}
+
+.argument .title {
+	font-size: 48px;
+	text-align: center;
+	font-weight: 200;
+}
+
+.argument .body {
+	font-size: 20px;
+	font-weight: 200;
+}
+
+a.linkhome {
+	color: #000;
+	margin-left: 30px;
+	margin-top: 20px;
+	display: block;
+	font-size: 18px;
+	font-weight: 200;
+}
+
 /*  -------------------------------------
                      FONTS
     ------------------------------------- */
