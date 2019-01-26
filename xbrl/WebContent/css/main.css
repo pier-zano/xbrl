@@ -30,8 +30,12 @@ body {
 	position: absolute; 
 	right: 16px; 
 	top: 6px; 
+}
+
+#topbar .xbrllogo img {
 	height: 72px;
 }
+
 #topbar .title {
 	padding-top: 2px; 
 	font-size: 32px; 
@@ -96,7 +100,7 @@ body {
 
 
 /*   ================================================
-                       MIDDLE BAR
+                       MIDDLE BAR (slick carousel)
      ================================================  */                       
 
 #middlebar {
@@ -127,16 +131,22 @@ body {
 }	
 
 #middlebar .slickpanel div.title {
-	font-size: 32px;
+	font-size: 24px;
 	font-weight: 200;
+	border-bottom: 1px solid #146389;
+	width: 90%;
+	margin: 1px auto;
 }	
 
-#middlebar .slickpanel div.body {
+#middlebar .slickpanel div.body, #middlebar .slickpanel div.body p {
 	font-size: 18px;
 	font-weight: normal;
 	text-align: left;
 	padding: 2px 6px;
 }	
+#middlebar .slickpanel div.body p {
+}
+
 
 #middlebar .slickpanel div.continue {
 	text-align: right;
@@ -234,13 +244,17 @@ body {
 }
 
 .argument .title {
-	font-size: 48px;
+	font-size: 28px;
 	text-align: center;
 	font-weight: 200;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#addffa+0,addffa+50,addffa+100&0.2+0,1+50,0.2+100 */
+	background: -moz-linear-gradient(left, rgba(173,223,250,0.2) 0%, rgba(173,223,250,1) 50%, rgba(173,223,250,0.2) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(173,223,250,0.2) 0%,rgba(173,223,250,1) 50%,rgba(173,223,250,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(173,223,250,0.2) 0%,rgba(173,223,250,1) 50%,rgba(173,223,250,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-.argument .body {
-	font-size: 20px;
+.argument .body, .argument .body p {
+	font-size: 18px;
 	font-weight: 200;
 }
 
