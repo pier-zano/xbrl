@@ -152,7 +152,7 @@ body {
 	font-size: 28px;
 	height: 320px;
 	position: relative;
-	background: #B2E0F48a;
+	background: rgba(178, 224, 244, 0.7);
 }	
 
 #middlebar .slickpanel div.data {
@@ -185,10 +185,10 @@ body {
 	text-align: left;
 	padding: 2px 6px;
 }	
-.screen-m #middlebar .slickpanel div.body, #middlebar .slickpanel div.body p {
+.screen-m #middlebar .slickpanel div.body, .screen-m #middlebar .slickpanel div.body p {
 	font-size: 16px;
 }
-.screen-s #middlebar .slickpanel div.body, #middlebar .slickpanel div.body p {
+.screen-s #middlebar .slickpanel div.body, .screen-s #middlebar .slickpanel div.body p {
 	font-size: 13px;
 }
 
@@ -280,9 +280,9 @@ body {
 	font-size: 10px;
 }
 */
-/*   ================================================
+/*   ==============================================
                          PAGES
-     ================================================  */        
+     ==============================================  */        
 .pagetitle {
 	font-size: 28px;
 	text-align: center;
@@ -295,7 +295,7 @@ body {
 .argument {
 	margin: 20px auto;
 	padding: 6px 8px;
-	background: #ffffffba;
+	background: rgba(245, 250, 255, 0.9);
 	font-size: 24px;
 	width: 80%;		
 }
@@ -308,6 +308,14 @@ body {
 	background: -moz-linear-gradient(left, rgba(173,223,250,0.2) 0%, rgba(173,223,250,1) 50%, rgba(173,223,250,0.2) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(left, rgba(173,223,250,0.2) 0%,rgba(173,223,250,1) 50%,rgba(173,223,250,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right, rgba(173,223,250,0.2) 0%,rgba(173,223,250,1) 50%,rgba(173,223,250,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.argument h1 {
+	font-size: 21px;
+	text-align: left;
+	font-weight: normal;
+	margin: 6px 0 4px 20px;
+	text-transform: uppercase;
 }
 
 .argument .body, .argument .body p {
